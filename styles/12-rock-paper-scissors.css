@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.frame{
+    height: 80vh;
+    border: 1px solid white;
+    padding: 30px 10px;
+    border-radius: 50px;
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.8);
+    background-color: rgb(0, 0, 0);
+    display: none;
+}
+button {
+    transition: all 0.3s;
+}
+.game-info{
+    display: grid;
+    grid-template-rows: repeat(2, 70px);
+    align-items: center;
+    row-gap: 5px;
+}
+#rs-block{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(73, 73, 73, 0.24);
+    justify-content: center;
+}
+button:hover{
+box-shadow: 0 2px 5px rgba(255, 251, 225, 0.8);
+}
+button:active{
+    box-shadow:none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.move-icon {
+    height:50px;
+}
+.move-button{
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.reset-score-button,
+.auto-play-button {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor:pointer;
+}
+
+.r-s-b-m{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 7px 14px;
+}
+.reset-score-confirm{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    border-radius: 40px;
+    padding: 10px;
+    height: 25px;
+    flex: 280px 130px;
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0 0 7px rgba(255, 166, 0, 0.527);
+}
+.reset-score-confirm p{
+    font-size: 14px;
+    text-align: center;
+}
+.reset-score-confirm button{
+    border: none;
+    height: 35px;
+    width: 40px;
+    margin: 0 3px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(255, 196, 0);
+}
+.score{
+    display: flex;
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 20px;
+    padding: 15px 15px;
+    height: 10px;
+    width: 400px;
+   justify-content: center;
+   align-items: center;
+}
+.score div{
+    display: flex;
+    width: 100%;
+}
+#score-box{
+    display: flex;
+  }
+
+#score-box span{
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 20px;
+    height: 15px;
+    width: 250px;
+    margin-right: 5px;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+
+
